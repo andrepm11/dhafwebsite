@@ -10,88 +10,59 @@
     
     <link rel="stylesheet" href="primarystyle.css">   
 
-    <style type="text/css">
-        
-        body{
-            margin:0;
-            padding:0;
-            font-family: "Open Sans", Arial, sans-serif;
-            color: #5F5F5F;
-        }
-        
-        #mainpage{
-            
-            background-color:antiquewhite;
-            
-            
-        }
-        
-        #topbar{
-            background-color:azure;
-            
-        }
-        
-        #content{
-            width:100%;
-            background-color:white;
-            
-        }
 
-        .circle{
-            
-        }
-        .circle img{
-            border-radius: 50%;
-            width: 400px;
-            height:400px;
-        }
-        
-        #picturetext{
-        }
+    <style type="text/css">
+
         #primarypic{
-            width:500px;
-            float:left;
-        }
-        #mainpicture{
-            padding-top:30px;
-            padding-left:40px; 
-            float:left;
-        }
-        
-        
-        #donatepic{
-            
-            width:100px;
-            padding-left:190px;
             padding-top:10px;
         }
-        
-        #healthcareinfo{
-            padding-left:20px;
-            width:60%;
-            background-color:white;
-            float:left;
+        #mainpicture{
+            margin:0 auto;
+            width:300px;
         }
-        
+        #mainpicture img{
+            display:inline-block;
+            border-radius:50%;
+            width:300px;
+            
+        }
+        #donate{
+            margin:0 auto;
+            width:100px;
+        }
+        #donatepic{
+            display:inline-block;
+            width:100px;
+        }
         #circ{
             border-radius: 50%;
             width:10px;
             height:10px;
-            top:38px;
+            top:28px;
             float:left;
             background-color:grey;
             position:relative;
             z-index:2;
         }
+        #healthcareinfo{
+            padding:0 2em 2em 2em;
+            font-size:85%;
+        }
         
-        @media (min-width:800px){
-  
-                    
-            
+         @media (min-width:920px){
+             #primarypic{
+                 width:35%;
+                 float:left;
+                 display:inline-block;
+             }
+             #healthcareinfo{
+                 width:50%;
+                 display:inline-block;
+             }
+             
             
         }
         
-
     </style>
 
 
@@ -101,18 +72,20 @@
 <body>
 
     <div id=mainpage>
-        
-        <div id=topbar>
+        <div id="topbar">
             <div id="ulwrap">
             <ul>
-                
-                <li><a href="circle.html">HOME</a></li>
-                <li><a href="about">ABOUT US</a></li>
-                <li><a href="donate">DONATE</a></li>
-                <li><img style="margin-top:-8px;" src="pictures/DHAF_logo_blue.png"></li>
-                <li><a class="active" href="projects">OUR PROJECTS</a></li>
-                <li><a href="contact">CONTACT US</a></li>
-                <li><a href="news">NEWS</a></li>
+                <div id="col1">
+                    <li><a href="circle.html">HOME</a></li>
+                    <li><a href="about">ABOUT US</a></li>
+                    <li><a href="donate">DONATE</a></li>
+                </div>
+                <li style="float:left;"><img style="margin-top:-8px;" src="pictures/DHAF_logo_blue.png"></li>
+                <div id="col2">
+                    <li><a class="active" href="projects">OUR PROJECTS</a></li>
+                    <li><a href="contact">CONTACT US</a></li>
+                    <li><a href="news">NEWS</a></li>
+                </div>
                 
             </ul>
             </div> 
@@ -120,13 +93,13 @@
         
        
         
-        <div id=content>
+        <div id="content">
             <div id="picturetext">  
                 <div id="primarypic">
                     <div class="circle" id="mainpicture">                 
                         <img src="pictures/doc.png">
                     </div>
-                    <div class="donate">
+                    <div id="donate">
                         <img id="donatepic" src="pictures/donate.png">
                     </div>
                 </div>
@@ -147,18 +120,14 @@
                     
                 </div>
             </div>
-            
-            
-           <!-- <div class="textbox" id="healthcareinfo">
-            
-            </div>
-            -->
-            
-            
+        </div>
+        <div id="projbar">
+        
         </div>
     
     </div>
-
+    
+    
 
 </body>
     
