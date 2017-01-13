@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Dr. Hawa - Dr. Hawa Abdi Foundation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="primarystyle.css">   
+
+
+    <style type="text/css">
+
+        #donate{
+            margin:0 auto;
+            width:100px;
+        }
+        #donatepic{
+            display:inline-block;
+            width:100px;
+        }
+        #circ{
+            border-radius: 50%;
+            width:10px;
+            height:10px;
+            top:38px;
+            float:left;
+            background-color:grey;
+            position:relative;
+            z-index:2;
+        }
+        #aboutinfo{
+            padding:0 2em 2em 2em;
+            font-size:85%;
+        }
+        #projbar{
+            margin:0 auto;
+            width:200px;
+            background-color:white;
+        }
+        
+        #education{
+            display:inline-block;
+            float:left;
+        }
+        
+        #edupic{
+            width:100px;
+        }
+        #edupic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #healthcare{
+            display:inline-block;
+            float:left;
+        }
+        
+        #healthpic{
+            width:100px;
+        }
+        #healthpic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #wash{
+            display:inline-block;
+            float:left;
+        }
+        #washpic{
+            width:100px;
+        }
+        #washpic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #agri{
+            display:inline-block;
+            float:left;
+        }
+        #agripic{
+            width:100px;
+        }
+        #agripic img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        #charlotte{
+            display:inline-block;
+        }
+        #charpic{
+            width:100px;
+        }
+        #charpic img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        
+        #filler{
+            padding:63px;
+            padding-bottom:64px;
+        }
+        #section1 a{
+            color:#2BAFBF;
+        }
+        #section1 a:hover{
+            color:#C6B274;
+        }
+        #sidebar a{
+            color:#2BAFBF;
+        }
+        #sidebar a:hover{
+            color:#C6B274;
+        }
+        
+        #sidebar{
+            margin:10px;
+        }
+        
+        
+        
+        @media (min-width:920px){
+             #primarypic{
+                 width:35%;
+                 float:left;
+                 display:inline-block;
+             }
+             #aboutinfo{
+                 float:left;
+                 width:70%;
+                 display:inline-block;
+             }
+            #sidebar{
+                position:fixed;
+                display:inline-block;
+                height:10px;
+                width:20%;
+            }
+            #projbar{
+                width:500px;
+               
+            }
+             
+            
+        }
+        
+        
+    </style>
+
+
+</head>
+
+
+<body>
+    <div id="measure">
+    </div>
+    <div id=mainpage>
+        <div id="topbarsmall">
+            <div id="logostretch">
+                <img src="pictures/DHAF_logo_blue.png">
+            </div>
+            
+            <div id="buttonwrap">
+                <button type="button" id="menubtn" onclick="myFunction()">MENU</button>
+            </div> 
+            <div id="btnmenuwrap">
+                <ul id="buttonmenu" style="display:none">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a class="active" href="about.html">About Us</a></li>
+                    <ul id="subabout">
+                        <li><a href="drhawa.html">Dr. Hawa</a></li>
+                        <li><a href="drmohamed.html">Dr. Mohamed</a></li>
+                    </ul>
+                    <li><a href="donate">Donate</a></li>
+                    <li><a href="projects">Our Projects</a></li>
+                    <ul id="subprojects">
+                        <li><a href="health.html">Healthcare</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="water.html">WASH</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="charlotte.html">Charlotte</a></li>
+                    </ul>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="news">News</a></li>
+                
+                </ul>
+                <script>
+                    function myFunction(){
+                        
+                        btn = document.getElementById("buttonmenu");
+                        if(btn.style.display == "none"){
+                            btn.style.display = "inline-block";
+                            btn.style.border="solid 1px black"
+                        }else{
+                            btn.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
+        <div id="topbar">
+            <div id="ulwrap">
+            <ul>
+                <div id="col1">
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="dropdown"><a class="active dropbtn" href="about.html">ABOUT US</a>
+                        <div class="dropdowncontent">
+                            <a href="drhawa.html">Dr. Hawa</a>
+                            <a href="drmohamed.html">Dr. Mohamed</a>
+                        </div>
+                    </li>
+                    <li><a href="donate">DONATE</a></li>
+                </div>
+                <li style="float:left;"><img style="margin-top:-8px;" src="pictures/DHAF_logo_blue.png"></li>
+                <div id="col2">
+                    <li class="dropdown"><a class="dropbtn" href="projects">OUR PROJECTS</a>
+                        <div class="dropdowncontent">
+                            <a href="health.html">Healthcare</a>
+                            <a href="education.html">Education</a>
+                            <a href="water.html">WASH</a>
+                            <a href="agriculture.html">Agriculture</a>
+                            <a href="charlotte.html">Charlotte</a>
+                        </div>
+                    </li>
+                    <li><a href="contact">CONTACT US</a></li>
+                    <li><a href="news">NEWS</a></li>
+                </div>
+                
+            </ul>
+            </div> 
+        </div>
+        
+       
+        
+        <div id="content">
+            <div id="picturetext">  
+                <div id="aboutinfo">
+                    <h1 style="padding-bottom:10px; border-bottom: solid 1px grey;">
+                       <div id="circ"></div>
+                        Dr. Mohamed
+                    </h1>
+                    
+                    
+                    <div id="section1" >
+                        <h2>Dr. Deqo Waqaf, Chief Executive Officer</h2> 
+                        <img style="width:310px;float:left; padding-right:20px; padding-bottom:10px;" src="pictures/drmohamed.jpg">               
+                        <p>Dr. Deqo Aden Mohamed is the daughter of Dr. Hawa Abdi. She was born in Mogadishu, grew up feeding the refugees her mother was harboring, and earned an MD in Moscow in 2000. She was an OB-GYN resident in Russia up to 2003. She continued to go back to the internally displaced camp, which hosted up to more than 90,000 people at one point, to work during her holidays. She came to America as a refugee in 2003 and gained extensive experience working in healthcare. She became a naturalized American in 2008.</p>
+
+                        <p>Today, she works full time on the ground in Somalia. She leads all operations in the Hawa Abdi Village in Lower Shabelle, while ensuring the safety of the 300 families who have found permanent shelter in the community. She leads the 400-bed Dr. Hawa Abdi General Hospital, the Waqaf-Diblawe Primary School, a women’s education centre, and a smart farming agriculture project. She simultaneously manages the administrative aspects of DHAF as CEO of the organization in the United States.</p>
+
+                        <p>Besides her work, Dr. Mohamed regularly attends conferences and speaks on behalf of DHAF, her mother’s lifework, and on Somalia. Recently, she was invited as a guest speaker at the World Forum on Human Rights in Brasilia, Brazil, and participated at a ceremony on kidney diseases in Chennai, India. Dr. Mohamed has been featured on media outlets such as TED, the Leonard Lopate Show, and the Daily Beast.</p>
+
+                       
+                    </div>
+                    
+                    
+                </div>
+                <div id="sidebar">
+                    <h3 style="font-size:90%; ">Mama Hawa's Memoir: Keeping Hope Alive</h1>
+                    <a href="https://www.amazon.com/Keeping-Hope-Alive-Woman-90-Changed/dp/1455503762"><img style="width:50%;float:left;padding-right:20px;"src=pictures/book.jpg></a>
+                    <p style="font-size:80%;">The moving memoir, Keeping Hope Alive: One Woman--90,000 Lives Changed, chronicles Dr. Hawa and her daughters' inspiring work to keep 90,000 of her fellow citizens safe, healthy, and educated for over 20 years in Somalia.</p>
+                    <a href="https://www.amazon.com/Keeping-Hope-Alive-Woman-90-Changed/dp/1455503762"><p style="font-size:80%;text-decoration:none;">Click here and order your copy today!</p></a>
+                    <h4 style="clear:both; padding:10px 0px 0px 0px; margin:0px;">Donate</h4>
+                    <p style="margin:4px;font-size:80%">Your generosity can help save lives.</p>
+                    <img style="width:30%;"src=pictures/donate.png>
+                </div>
+            </div>
+        </div>
+        <div id="projbar">
+            <div id="healthcare">
+                <div id="healthpic">
+                    <a href="health.html"><img src="pictures/doc.png"></a>
+                </div>
+            </div>
+            <div id="education">
+                <div id="edupic">
+                    <a href="education.html"><img src="pictures/somaliclasscrop.jpg"></a>
+                </div>
+            </div>
+
+
+            <div id="wash">
+                <div id="washpic">
+                    <a href="water.html"><img src="pictures/watercrop.jpg"></a>
+                </div>
+            </div>
+            <div id="agri">
+                <div id="agripic">
+                    <a href="agriculture.html"><img src="pictures/fieldcrop.jpg"></a>
+                </div>
+            </div> 
+            <div id="charlotte">
+                <div id="charpic">
+                    <a href="charlotte.html"><img src="pictures/questionmark.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div id="filler">
+        </div>
+        <div id="footer">
+            <div id="footerlist">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="volunteer.html"><li>- Volunteer</li></a>
+                    <a href="reports.html"><li>- Reports</li></a>
+                    <a href="events.html"><li>- Events</li></a>
+                    <a href="donate.html"><li>- Donate</li></a>
+                    <a href="media.html"><li>- Media</li></a>
+                </ul>
+            </div>
+            <div id="copyright"><span>Copyright © 2017 Dr. Hawa Abdi Foundation. All rights reserved.</span></div>
+        </div>
+    </div>
+    
+    
+
+</body>
+    
+</html>

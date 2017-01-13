@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>Dr. Hawa Abdi Foundation - Healthcare</title>
+    <title>Healthcare - Dr. Hawa Abdi Foundation</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -13,6 +13,15 @@
 
     <style type="text/css">
 
+/*
+        #measure{
+            height:100px;
+            width:50%;
+            background-color:blue;
+            padding:0;
+            margin:0;
+        }
+*/
         #primarypic{
             padding-top:10px;
         }
@@ -34,22 +43,69 @@
             display:inline-block;
             width:100px;
         }
-        #circ{
-            border-radius: 50%;
-            width:10px;
-            height:10px;
-            top:28px;
-            float:left;
-            background-color:grey;
-            position:relative;
-            z-index:2;
-        }
         #healthcareinfo{
             padding:0 2em 2em 2em;
             font-size:85%;
         }
+        #projbar{
+            margin:0 auto;
+            width:200px;
+            background-color:white;
+        }
         
-         @media (min-width:920px){
+        #education{
+            display:inline-block;
+            float:left;
+        }
+        
+        #edupic{
+            width:100px;
+        }
+        #edupic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #water{
+            display:inline-block;
+            float:left;
+        }
+        #waterpic{
+            width:100px;
+        }
+        #waterpic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #agriculture{
+            display:inline-block;
+            float:left;
+        }
+        #agripic{
+            width:100px;
+        }
+        #agripic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #charlotte{
+            display:inline-block;
+        }
+        #charpic{
+            width:100px;
+        }
+        #charpic img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        
+        #filler{
+            padding:12px;
+        }
+        
+        @media (min-width:920px){
              #primarypic{
                  width:35%;
                  float:left;
@@ -59,9 +115,13 @@
                  width:50%;
                  display:inline-block;
              }
+            #projbar{
+                width:400px;
+            }
              
             
         }
+        
         
     </style>
 
@@ -70,19 +130,77 @@
 
 
 <body>
-
+    <div id="measure">
+    </div>
     <div id=mainpage>
+        <div id="topbarsmall">
+            <div id="logostretch">
+                <img src="pictures/DHAF_logo_blue.png">
+            </div>
+            
+            <div id="buttonwrap">
+                <button type="button" id="menubtn" onclick="myFunction()">MENU</button>
+            </div> 
+            <div id="btnmenuwrap">
+                <ul id="buttonmenu" style="display:none">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <ul id="subabout">
+                        <li><a href="drhawa.html">Dr. Hawa</a></li>
+                        <li><a href="drmohamed.html">Dr. Mohamed</a></li>
+                    </ul>
+                    <li><a href="donate">Donate</a></li>
+                    <li><a href="projects">Our Projects</a></li>
+                    <ul id="subprojects">
+                        <li><a class="active" href="health.html">Healthcare</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="water.html">WASH</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="charlotte.html">Charlotte</a></li>
+                    </ul>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="news">News</a></li>
+                
+                </ul>
+                <script>
+                    function myFunction(){
+                        
+                        btn = document.getElementById("buttonmenu");
+                        if(btn.style.display == "none"){
+                            btn.style.display = "inline-block";
+                            btn.style.border="solid 1px black"
+                        }else{
+                            btn.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
         <div id="topbar">
             <div id="ulwrap">
             <ul>
                 <div id="col1">
-                    <li><a href="circle.html">HOME</a></li>
-                    <li><a href="about">ABOUT US</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="dropdown"><a class="dropbtn" href="about.html">ABOUT US</a>
+                        <div class="dropdowncontent">
+                            <a href="drhawa.html">Dr. Hawa</a>
+                            <a href="drmohamed.html">Dr. Mohamed</a>
+                        </div>
+                    </li>
                     <li><a href="donate">DONATE</a></li>
                 </div>
                 <li style="float:left;"><img style="margin-top:-8px;" src="pictures/DHAF_logo_blue.png"></li>
                 <div id="col2">
-                    <li><a class="active" href="projects">OUR PROJECTS</a></li>
+                     <li class="dropdown"><a class="active dropbtn" href="projects">OUR PROJECTS</a>
+                        <div class="dropdowncontent">
+                            <a href="health.html">Healthcare</a>
+                            <a href="education.html">Education</a>
+                            <a href="water.html">WASH</a>
+                            <a href="agriculture.html">Agriculture</a>
+                            <a href="charlotte.html">Charlotte</a>
+                        </div>
+                    </li>
                     <li><a href="contact">CONTACT US</a></li>
                     <li><a href="news">NEWS</a></li>
                 </div>
@@ -96,7 +214,7 @@
         <div id="content">
             <div id="picturetext">  
                 <div id="primarypic">
-                    <div class="circle" id="mainpicture">                 
+                    <div id="mainpicture">                 
                         <img src="pictures/doc.png">
                     </div>
                     <div id="donate">
@@ -106,25 +224,59 @@
 
 
                 <div id="healthcareinfo">
-                    <h1 style="border-bottom: solid 1px grey;">
+                    <h1 style="padding-bottom:10px; border-bottom: solid 1px grey;">
                        <div id="circ"></div>
                         Healthcare
                     </h1>
                     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan in diam ut mattis. Sed et rutrum nibh. Pellentesque consectetur fermentum nibh, sed fringilla sapien gravida tincidunt. Aenean ultrices sit amet mi vel pulvinar. Sed a nisi sed est cursus finibus in ut tortor. Duis nibh massa, placerat ut nisl auctor, pulvinar congue tortor. Nunc et tortor id diam maximus dictum tristique in magna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non vestibulum metus. Phasellus diam augue, molestie in ex vitae, placerat blandit mauris. Nulla facilisi. In vehicula odio quis magna consectetur, id malesuada nisi lacinia. Praesent mauris erat, porta tempus molestie sed, tempor in nulla. Donec malesuada dictum libero in sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Morbi tempus tincidunt felis vitae blandit. Nulla facilisi. Etiam tempor consequat lacus ut placerat. Ut vestibulum vestibulum orci vel pellentesque. Duis rutrum augue nisl, at lobortis leo tempus sit amet. Nulla ac nisi pharetra, accumsan lorem et, porta diam. Duis nec ultricies dolor. Aenean placerat velit lacus, quis pretium est ornare sed.</p>
 
-                    <p>Proin quis risus et magna tempus facilisis. Fusce vitae feugiat felis, eu vulputate magna. Suspendisse posuere et lectus vitae luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec elit velit, efficitur nec vestibulum et, laoreet ut eros. Praesent laoreet pharetra neque in lacinia. Maecenas non blandit dolor. Aenean ut sagittis quam. Duis vel eleifend purus. Nunc fermentum lorem et ante molestie, sit amet vestibulum lacus iaculis. Vivamus porta felis odio, sit amet luctus nulla dapibus sed. Quisque sodales, nisl vitae rhoncus vehicula, metus justo porttitor ex, id fermentum ipsum elit at ex.</p>
+                    <p>Duis at fermentum neque. Donec lacinia luctus ultrices. Praesent pretium quam non leo tempus, commodo pulvinar lectus elementum. Sed imperdiet interdum vehicula. Integer a interdum eros. Praesent tincidunt tellus id lacus ultrices ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque id feugiat elit, sed laoreet erat. Quisque fringilla sed libero eget fermentum. Donec sit amet erat suscipit, tincidunt justo ut, pretium neque. Fusce imperdiet ante non elementum laoreet. Nunc turpis urna, eleifend vel leo a, cursus sollicitudin metus. Sed leo orci, scelerisque nec tortor pulvinar, rutrum fermentum lectus. Cras ex sem, sollicitudin eget porttitor quis, interdum fringilla est. Maecenas metus lectus, molestie eget sem a, lobortis auctor velit.</p>
 
-                    <p>Duis eleifend porttitor iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum nec libero eget malesuada. Suspendisse tempor posuere quam id venenatis. Maecenas molestie semper libero, quis iaculis libero cursus interdum. Ut vitae tincidunt nisi. Curabitur vestibulum neque ante, id dignissim ipsum sagittis ac. Etiam eleifend est a mi fermentum varius.</p>
-
+                    <p>Nulla iaculis suscipit magna quis rutrum. Fusce nulla erat, volutpat quis velit et, efficitur ornare nunc. Nam vitae sapien consequat, ultricies mauris nec, tristique ligula. Integer sit amet tortor leo. Cras tempor faucibus felis et tristique. Vivamus et turpis vel lectus rutrum rutrum nec at risus. Vivamus auctor felis in maximus dictum. Donec a maximus metus. Donec ut pellentesque orci. Maecenas bibendum in leo a vehicula. Nunc suscipit lectus a posuere mattis. Donec at sollicitudin nisi. Donec molestie efficitur nibh, vitae rutrum est rhoncus sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vel neque ac metus mollis malesuada. Ut tincidunt tincidunt semper.</p>
                     
                 </div>
             </div>
         </div>
         <div id="projbar">
-        
+            <div id="education">
+                <div id="edupic">
+                    <a href="education.html"><img src="pictures/somaliclasscrop.jpg"></a>
+                </div>
+            </div>
+            <div id="water">
+                <div id="waterpic">
+                    <a href="water.html"><img src="pictures/watercrop.jpg"></a>
+                </div>
+            </div>
+
+
+            <div id="agriculture">
+                <div id="agripic">
+                    <a href="agriculture.html"><img src="pictures/fieldcrop.jpg"></a>
+                </div>
+            </div>
+            <div id="charlotte">
+                <div id="charpic">
+                    <a href="charlotte.html"><img src="pictures/questionmark.jpg"></a>
+                </div>
+            </div> 
         </div>
-    
+        <div id="filler">
+        </div>
+        <div id="footer">
+            <div id="footerlist">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="volunteer.html"><li>- Volunteer</li></a>
+                    <a href="reports.html"><li>- Reports</li></a>
+                    <a href="events.html"><li>- Events</li></a>
+                    <a href="donate.html"><li>- Donate</li></a>
+                    <a href="media.html"><li>- Media</li></a>
+                </ul>
+            </div>
+            <div id="copyright"><span>Copyright © 2017 Dr. Hawa Abdi Foundation. All rights reserved.</span></div>
+        </div>
     </div>
     
     

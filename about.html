@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>About Us - Dr. Hawa Abdi Foundation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="primarystyle.css">   
+
+
+    <style type="text/css">
+
+/*
+        #measure{
+            height:100px;
+            width:50%;
+            background-color:blue;
+            padding:0;
+            margin:0;
+        }
+*/
+
+        #donate{
+            margin:0 auto;
+            width:100px;
+        }
+        #donatepic{
+            display:inline-block;
+            width:100px;
+        }
+        #circ{
+            border-radius: 50%;
+            width:10px;
+            height:10px;
+            top:38px;
+            float:left;
+            background-color:grey;
+            position:relative;
+            z-index:2;
+        }
+        #aboutinfo{
+            padding:0 2em 2em 2em;
+            font-size:85%;
+        }
+        #projbar{
+            margin:0 auto;
+            width:200px;
+            background-color:white;
+        }
+        
+        #education{
+            display:inline-block;
+            float:left;
+        }
+        
+        #edupic{
+            width:100px;
+        }
+        #edupic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #healthcare{
+            display:inline-block;
+            float:left;
+        }
+        
+        #healthpic{
+            width:100px;
+        }
+        #healthpic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #wash{
+            display:inline-block;
+            float:left;
+        }
+        #washpic{
+            width:100px;
+        }
+        #washpic img{
+            border-radius:50%;
+            width:100px;
+        }
+        
+        #agri{
+            display:inline-block;
+            float:left;
+        }
+        #agripic{
+            width:100px;
+        }
+        #agripic img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        #charlotte{
+            display:inline-block;
+        }
+        #charpic{
+            width:100px;
+        }
+        #charpic img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        
+        #filler{
+            padding-top:17px;
+            padding-bottom:16px;
+        }
+        #section4 a{
+            color:#2BAFBF;
+        }
+        #section4 a:hover{
+            color:#C6B274;
+        }
+        #sidebar a{
+            color:#2BAFBF;
+        }
+        #sidebar a:hover{
+            color:#C6B274;
+        }
+        #sidebar{
+            margin:10px;
+        }
+        
+        
+        
+        @media (min-width:920px){
+             #primarypic{
+                 width:35%;
+                 float:left;
+                 display:inline-block;
+             }
+             #aboutinfo{
+                 float:left;
+                 width:70%;
+                 display:inline-block;
+             }
+            #sidebar{
+                position:fixed;
+                display:inline-block;
+                height:10px;
+                width:20%;
+            }
+            #projbar{
+                width:500px;
+               
+            }
+             
+            
+        }
+        
+        
+    </style>
+
+
+</head>
+
+
+<body>
+    <div id="measure">
+    </div>
+    <div id=mainpage>
+        <div id="topbarsmall">
+            <div id="logostretch">
+                <img src="pictures/DHAF_logo_blue.png">
+            </div>
+            
+            <div id="buttonwrap">
+                <button type="button" id="menubtn" onclick="myFunction()">MENU</button>
+            </div> 
+            <div id="btnmenuwrap">
+                <ul id="buttonmenu" style="display:none">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a class="active" href="about.html">About Us</a></li>
+                    <ul id="subabout">
+                        <li><a href="drhawa.html">Dr. Hawa</a></li>
+                        <li><a href="drmohamed.html">Dr. Mohamed</a></li>
+                    </ul>
+                    <li><a href="donate">Donate</a></li>
+                    <li><a href="projects">Our Projects</a></li>
+                    <ul id="subprojects">
+                        <li><a href="health.html">Healthcare</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="water.html">WASH</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                        <li><a href="charlotte.html">Charlotte</a></li>
+                    </ul>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="news">News</a></li>
+                
+                </ul>
+                <script>
+                    function myFunction(){
+                        
+                        btn = document.getElementById("buttonmenu");
+                        if(btn.style.display == "none"){
+                            btn.style.display = "inline-block";
+                            btn.style.border="solid 1px black"
+                        }else{
+                            btn.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
+        <div id="topbar">
+            <div id="ulwrap">
+            <ul>
+                <div id="col1">
+                    <li><a href="home.html">HOME</a></li>
+                    <li class="dropdown"><a class="active dropbtn" href="about.html">ABOUT US</a>
+                        <div class="dropdowncontent">
+                            <a href="drhawa.html">Dr. Hawa</a>
+                            <a href="drmohamed.html">Dr. Mohamed</a>
+                        </div>
+                    </li>
+                    <li><a href="donate">DONATE</a></li>
+                </div>
+                <li style="float:left;"><img style="margin-top:-8px;" src="pictures/DHAF_logo_blue.png"></li>
+                <div id="col2">
+                    <li class="dropdown"><a class="dropbtn" href="projects">OUR PROJECTS</a>
+                        <div class="dropdowncontent">
+                            <a href="health.html">Healthcare</a>
+                            <a href="education.html">Education</a>
+                            <a href="water.html">WASH</a>
+                            <a href="agriculture.html">Agriculture</a>
+                            <a href="charlotte.html">Charlotte</a>
+                        </div>
+                    </li>
+                    <li><a href="contact">CONTACT US</a></li>
+                    <li><a href="news">NEWS</a></li>
+                </div>
+                
+            </ul>
+            </div> 
+        </div>
+        
+       
+        
+        <div id="content">
+            <div id="picturetext">  
+                <div id="aboutinfo">
+                    <h1 style="padding-bottom:10px; border-bottom: solid 1px grey;">
+                       <div id="circ"></div>
+                        About Us
+                    </h1>
+                    
+                    
+                    <div id="section1">
+                        <img style="width:50%;float:left; padding-right:20px;" src="pictures/group.jpg">           <h2>Our Mission</h2>      
+                        <p>Our mission is to create access to basic human rights in Somalia through building sustainable institutions in healthcare, education, agriculture, and social entrepreneurship.</p>
+
+                        <p>Our vision is to generate socially empowered and environmentally-responsible communities committed to sustaining long-lasting peace in Somalia.</p>
+
+                        <p>We value solutions, equality, passion, professionalism, integrity, respect, humility, and commitment.</p>
+
+                        <p>Since 1983, we have provided healthcare, education, food and clean water to displaced Somalis independent of their clan, gender, religious and political affiliation. DHAF is a solutions-oriented organization that seeks to provide our people with the skills, resources and knowledge to stand on their own feet.</p>
+                    </div>
+                    <div id="section2" style="clear:both;">
+                        
+                        <img style="width:50%;float:right;padding-left:20px;" src=pictures/tent.jpg>
+                        <h2 style="padding-top:20px;">Our Foundation</h2> 
+                        <p>DHAF is an independent non-profit organization that is registered as 501(c)(3) charitable organization in the United States. The Foundation aims to raises funds to provide emergency relief to Somalis stricken by famine and war, while empowering them to take command of their own futures. We are one of the oldest NGOs operating inside of Somalia, and over the last 30 years hundreds of thousands of Somalis have come under our care.</p>
+                        <p>Our Foundation is uniquely positioned to deliver change on the field, for we are a Somali-run organization with decades of experience serving the community in Afgooye. in Somalia. We stress creating sustainable projects that can be carried out by Somalis for Somalis.</p>
+                        <p>All donations to the Dr. Hawa Abdi Foundation are tax-deductable, as relevant local laws allow.</p>
+                    </div>
+                    <div id="section3" style="clear:both;">
+                        
+                        <img style="width:50%;float:left;padding-right:20px;" src=pictures/sickchild.jpg>
+                        <h2 style="padding-top:20px;">Our Principles</h2> 
+                        <p>DHAF is an apolitical organization that is not affiliated with any government, political movement, religious or clan group. Our Foundation decides what projects to undertake and what relief to provide based on the ground needs of the Hawa Abdi Village.</p>
+                        <p>DHAF is a financially independent organization. We receive all of our funding from charitable donations from the general public around the world and other charitable endowments. We do not accept any funding from governments or from any Somali public institutions.</p>
+                        <p>All DHAF medical personnel are committed to ethics of neutrality. Since 1991, we have provided general, emergency and maternal care to displaced Somalis independent of their clan, gender, religious and political affiliation. All of our critical services to the Somali people are provided at no cost and our Foundation spends less than 2% of its all its donations on administrative costs.</p>
+                    </div>
+                    <div id="section4" style="clear:both; padding-top:20px;">
+                        <h2>Financial Reporting</h2>
+                        <p>We are happy to make our financial documents available for public inspection upon request. Please e-mail <a style="text-decoration:none;" href="mailto:contact@dhaf.org" target="_top">contact@dhaf.org.</a></p>
+                    </div>
+                    
+                </div>
+                <div id="sidebar">
+                    <h3 style="font-size:90%; ">Mama Hawa's Memoir: Keeping Hope Alive</h1>
+                    <a href="https://www.amazon.com/Keeping-Hope-Alive-Woman-90-Changed/dp/1455503762"><img style="width:50%;float:left;padding-right:20px;"src=pictures/book.jpg></a>
+                    <p style="font-size:80%;">The moving memoir, Keeping Hope Alive: One Woman--90,000 Lives Changed, chronicles Dr. Hawa and her daughters' inspiring work to keep 90,000 of her fellow citizens safe, healthy, and educated for over 20 years in Somalia.</p>
+                    <a href="https://www.amazon.com/Keeping-Hope-Alive-Woman-90-Changed/dp/1455503762"><p style="font-size:80%;text-decoration:none;">Click here and order your copy today!</p></a>
+                    <h4 style="clear:both; padding:10px 0px 0px 0px; margin:0px;">Donate</h4>
+                    <p style="margin:4px;font-size:80%">Your generosity can help save lives.</p>
+                    <img style="width:30%;"src=pictures/donate.png>
+                </div>
+            </div>
+        </div>
+        <div id="projbar">
+            <div id="healthcare">
+                <div id="healthpic">
+                    <a href="health.html"><img src="pictures/doc.png"></a>
+                </div>
+            </div>
+            <div id="education">
+                <div id="edupic">
+                    <a href="education.html"><img src="pictures/somaliclasscrop.jpg"></a>
+                </div>
+            </div>
+
+
+            <div id="wash">
+                <div id="washpic">
+                    <a href="water.html"><img src="pictures/watercrop.jpg"></a>
+                </div>
+            </div>
+            <div id="agri">
+                <div id="agripic">
+                    <a href="agriculture.html"><img src="pictures/fieldcrop.jpg"></a>
+                </div>
+            </div> 
+            <div id="charlotte">
+                <div id="charpic">
+                    <a href="charlotte.html"><img src="pictures/questionmark.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div id="filler">
+        </div>
+        <div id="footer">
+            <div id="footerlist">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="volunteer.html"><li>- Volunteer</li></a>
+                    <a href="reports.html"><li>- Reports</li></a>
+                    <a href="events.html"><li>- Events</li></a>
+                    <a href="donate.html"><li>- Donate</li></a>
+                    <a href="media.html"><li>- Media</li></a>
+                </ul>
+            </div>
+            <div id="copyright"><span>Copyright © 2017 Dr. Hawa Abdi Foundation. All rights reserved.</span></div>
+        </div>
+    </div>
+    
+    
+
+</body>
+    
+</html>
